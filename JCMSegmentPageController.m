@@ -91,7 +91,9 @@
 	contentContainerView.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight;
 	[self.view addSubview:contentContainerView];
     
-	[self reloadTabButtons];
+    [self.view bringSubviewToFront:headerContainerView];
+	
+    [self reloadTabButtons];
 }
 
 - (void)viewDidUnload {
